@@ -3,3 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+  --accent-purple: #b259ff;
+  --accent-fuschia: #ff59f9;
+  --accent-pink: #ff598b;
+  --accent-orange: #ff8b59;
+  --accent-yellow: #ffcd59;
+  --accent-lime: #e1ff59;
+  --accent-green: #59ff91;
+  --accent-cyan: #59fff9;
+  --accent-navy: #6a59ff;
+  --danger: #ff5959;
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+
+  --font-leckerli: "Leckerli One", cursive;
+  --font-baloo: "Baloo 2", sans-serif;
+  --font-open: "Open Sans", sans-serif;
+
+  --logo: 400 40px var(--font-leckerli);
+  --heading-md: 700 28px var(--font-baloo);
+  --heading-sm: 700 18px var(--font-baloo);
+  --body-md: 400 16px var(--font-open);
+  --body-sm: 400 14px var(--font-open);
+  --body-xs: 400 12px var(--font-open);
+}
