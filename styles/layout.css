@@ -1,6 +1,6 @@
 #app {
   display: grid;
-  grid-template-columns: 32.26% 66.13%;
+  grid-template-columns: 1fr 2fr;
   gap: 1.25rem;
 
   padding-block: 1.25rem;
@@ -35,6 +35,28 @@ aside {
     & p {
       font: var(--body-md);
       font-weight: 300;
+      color: var(--text-heading);
+    }
+  }
+}
+
+main {
+  max-width: 51.25rem;
+  background-color: var(--shape-body);
+  border-radius: 0.75rem;
+  overflow: auto;
+
+  & .main-container {
+    width: 35rem;
+    padding-block: 5rem;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    & h2 {
+      font: var(--heading-md);
       color: var(--text-heading);
     }
   }
