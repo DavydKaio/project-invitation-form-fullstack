@@ -33,6 +33,10 @@ label {
   margin-bottom: 0.75rem;
 }
 
+.customization label {
+  margin-bottom: 1rem;
+}
+
 input:focus,
 textarea:focus {
   color: var(--text-heading);

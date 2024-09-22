@@ -1,0 +1,53 @@
+.customization {
+  & .input-file-wrapper {
+    position: relative;
+
+    & input,
+    & input:focus,
+    & input:hover {
+      all: unset;
+      position: absolute;
+      display: none;
+      inset: 0;
+    }
+
+    & label {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      cursor: pointer;
+
+      & div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        background-color: var(--shape-button);
+        font: var(--body-sm);
+        font-weight: 600;
+        color: var(--text-heading);
+
+        &:hover,
+        &:focus-within {
+          background-color: var(--shape-hover);
+        }
+      }
+
+      & > span {
+        color: var(--input-placeholder);
+        font: var(--body-md);
+      }
+    }
+
+    & input:valid + label > span {
+      display: none;
+    }
+
+    & input:valid + label::after {
+      content: "image.png";
+      font: var(--body-md);
+      color: var(--text-body);
+    }
+  }
+}
