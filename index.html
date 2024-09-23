@@ -356,8 +356,88 @@
               </div>
             </fieldset>
 
-            <fieldset>Dados</fieldset>
-            <fieldset>Aceites</fieldset>
+            <fieldset class="contacts">
+              <legend>
+                <img src="assets/icons/contact.svg" alt="" />
+                <p>Dados para contato</p>
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome completo"
+                />
+              </div>
+
+              <div class="flex">
+                <div class="flex-1">
+                  <div class="input-wrapper">
+                    <label for="email">E-mail</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="exemplo@email.com"
+                    />
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="input-wrapper">
+                    <label for="phone">Telefone</label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      placeholder="(99) 99999-9999"
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <div>
+              <div class="divider"></div>
+
+              <fieldset class="footer">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" name="agree" id="agree" />
+                  <label for="agree" class="check"></label>
+                  <p>
+                    Li e concordo com os <a href="#">Termos e Condições</a> e
+                    com a
+                    <a href="#">Política de Privacidade</a>
+                  </p>
+                </div>
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    name="updatesByEmail"
+                    id="updatesByEmail"
+                  />
+                  <label for="updatesByEmail" class="check"></label>
+                  <p>Aceito receber atualizações e promoções por e-mail</p>
+                </div>
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    name="updatesBySms"
+                    id="updatesBySms"
+                  />
+                  <label for="updatesBySms" class="check"></label>
+                  <p>Aceito receber atualizações e promoções por SMS</p>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="submit-wrapper">
+              <button>
+                <img src="assets/icons/ticket.svg" alt="" />
+                <p>Gerar convite</p>
+              </button>
+            </div>
           </form>
         </div>
       </main>
