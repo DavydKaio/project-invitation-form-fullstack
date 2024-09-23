@@ -15,6 +15,25 @@ textarea {
   &::placeholder {
     color: var(--input-placeholder);
   }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    margin-block: 0.5rem;
+
+    font: var(--body-xs);
+    color: var(--danger);
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+
+  &:invalid {
+    outline: 1px solid var(--danger);
+  }
 }
 
 input[type="datetime-local"] {
